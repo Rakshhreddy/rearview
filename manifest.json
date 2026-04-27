@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Rearview",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An editorial look at your browser history. A quiet year-in-review for your attention.",
   "permissions": ["history", "storage"],
   "background": {
