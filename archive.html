@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rearview</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="kicker">Rearview &nbsp;&middot;&nbsp; volume one</p>
+      <h1>Where you have been.</h1>
+      <p class="subtitle">
+        A quiet look at your browser history. Nothing leaves this page,
+        nothing is sent anywhere. It just sits with you.
+      </p>
+    </header>
+
+    <nav class="ranges" aria-label="Time range">
+      <button class="range-button" data-range="7">past week</button>
+      <button class="range-button active" data-range="30">past month</button>
+      <button class="range-button" data-range="90">past 90 days</button>
+      <button class="range-button" data-range="365">past year</button>
+    </nav>
+
+    <p id="status" class="status">Reading your history&hellip;</p>
+
+    <section class="view" id="view-rhythms">
+      <p class="section-number">I.</p>
+      <h2>Your rhythms</h2>
+      <p class="caption">
+        When you actually browse, by hour of day and day of week.
+        Darker squares are your busiest hours.
+      </p>
+      <div id="rhythms" class="chart"></div>
+    </section>
+
+    <section class="view" id="view-breakdown">
+      <p class="section-number">II.</p>
+      <h2>Where your attention goes</h2>
+      <p class="caption">
+        Visits grouped into categories using a starter rule set.
+        You will be able to refine these in a later version.
+      </p>
+      <div id="breakdown" class="chart"></div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Rearview is local-only. Your browsing data is read inside this tab,
+        held in memory, and forgotten when the tab closes.
+      </p>
+      <p class="credit">v0.1.0 &nbsp;&middot;&nbsp; a personal project</p>
+    </footer>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
