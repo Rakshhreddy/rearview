@@ -13,62 +13,44 @@
       <div class="brand">
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-name">Rearview</span>
-        <span class="brand-version">0.2</span>
-      </div>
-
-      <nav class="ranges" role="tablist" aria-label="Time range">
-        <button class="range" role="tab" data-range="7">7d</button>
-        <button class="range is-active" role="tab" aria-selected="true" data-range="30">30d</button>
-        <button class="range" role="tab" data-range="90">90d</button>
-        <button class="range" role="tab" data-range="365">1y</button>
-      </nav>
-
-      <div class="meta" id="meta">
-        <span class="meta-num" id="meta-visits">0</span>
-        <span class="meta-label">visits</span>
-        <span class="meta-sep">/</span>
-        <span class="meta-num" id="meta-sites">0</span>
-        <span class="meta-label">sites</span>
       </div>
     </header>
 
-    <section class="grid">
+    <section class="stage">
 
-      <article class="card card-rhythms" id="card-rhythms">
-        <header class="card-head">
-          <span class="card-num">i</span>
-          <h2 class="card-title">Rhythms</h2>
-          <span class="card-sub">when you browse</span>
-        </header>
-        <div class="card-body">
-          <div id="rhythms" class="rhythms"></div>
+      <div class="hero">
+        <span class="hero-tag">most time on</span>
+        <div class="hero-bead" id="hero-bead"></div>
+        <div class="hero-foot">
+          <span class="hero-pct" id="hero-pct">0%</span>
+          <span class="hero-of">of the past 14 days</span>
         </div>
-        <footer class="card-foot">
-          <span class="foot-label">peak</span>
-          <span class="foot-value" id="peak-label">&mdash;</span>
-        </footer>
-      </article>
+      </div>
 
-      <article class="card card-cats" id="card-cats">
-        <header class="card-head">
-          <span class="card-num">ii</span>
-          <h2 class="card-title">Categories</h2>
-          <span class="card-sub">where attention goes</span>
-        </header>
-        <div class="card-body card-body-cats">
-          <div id="breakdown" class="breakdown"></div>
+      <div class="screen-wrap">
+        <div class="shell">
+          <div class="screen">
+            <div id="device" class="device"></div>
+          </div>
         </div>
-        <footer class="card-foot">
-          <span class="foot-label">hover a row</span>
-          <span class="foot-value">to reveal top sites</span>
-        </footer>
-      </article>
+        <div class="tooltip" id="tooltip"></div>
+      </div>
+
+      <nav class="nav">
+        <button class="pill prev" id="prev-btn" aria-label="Previous 14 days">
+          <span class="pill-arrow">&larr;</span>
+        </button>
+        <span class="nav-range" id="range">&nbsp;</span>
+        <button class="pill next" id="next-btn" aria-label="Next 14 days">
+          <span class="pill-arrow">&rarr;</span>
+        </button>
+      </nav>
 
     </section>
 
     <footer class="appfoot">
-      <span class="foot-meta">local only &middot; nothing leaves this tab</span>
-      <span class="foot-status" id="status">reading history</span>
+      <span class="foot-meta">rearview / 0.14</span>
+      <span class="foot-status">hover, sweep across the squares</span>
     </footer>
 
   </main>

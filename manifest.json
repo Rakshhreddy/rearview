@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Rearview",
-  "version": "0.2.0",
-  "description": "An editorial look at your browser history. A quiet year-in-review for your attention.",
-  "permissions": ["history", "storage"],
+  "version": "0.14.0",
+  "description": "A small portfolio piece showing where time goes.",
   "background": {
     "service_worker": "background.js"
   },
